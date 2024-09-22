@@ -1,0 +1,527 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.navbar {
+    height: 90px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between; /* Align items on the left (logo) and right (nav details) */
+    align-items: center;
+    padding: 0 20px; /* Add some padding to the left and right */
+    
+}
+
+.logo img {
+    height: 70px; 
+    display: block; /* Ensures image displays as a block */
+}
+
+.nav-detlis {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-detlis li {
+    margin: 0; 
+}
+
+.nav-detlis a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px; 
+    font-size: 1.1em;
+    margin-right: 30px;
+}
+
+.nav-detlis a:hover {
+    font-size: 30px;
+    color: #e40c51ee; 
+}
+
+.active a:hover {
+   color: #da0653;
+}
+
+header img {
+    display: block;
+    margin: auto;
+}
+
+.section-1, .section-2 {
+    margin: 20px;
+    text-align: center;
+}
+.heading {
+    height: 90px;
+    width: 90%;
+    border-radius: 9px;
+    border: solid;
+    box-shadow: 0 0 10px #aba4a9,
+    0 0 10px #aba4a9,
+    0 0 10px #aba4a9,
+    0 0 10px #aba4a9;
+   
+    margin: 20px;
+    margin-left: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+    color: white;
+    font-size: 1.5rem;
+    text-shadow: 0px 0px 10px #00ff00,
+    0px 0px 20px #00ff00,
+    0px 0px 40px #00ff00,
+    0px 0px 80px #00ff00;
+    text-align: center;
+}
+.heading h1:hover{
+    color: black;
+}
+ 
+.heading h2{
+    
+    color: white;
+        padding-top: 16px;
+        font-size: 1.5rem;
+        text-shadow: 0px 0px 10px #e806a0,
+        0px 0px 20px #e806a0,
+        0px 0px 40px #e806a0,
+        0px 0px 80px #e806a0;
+        text-align: center;
+}
+.heading h2:hover{
+    color: black;
+}
+/* Image Carousel CSS */
+.carousel-container {
+    width: 800px;
+    height: 400px;
+    margin: 50px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-images {
+    display: flex;
+    width: 100%;
+    animation: slide 11s infinite;
+    box-shadow: 5px 5px 10px #343a40;
+}
+
+.carousel-images img {
+    width: 100%;
+    height: auto;
+    box-shadow: 5px 5px 10px #343a40;
+}
+@keyframes slide {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(0); }
+    40% { transform: translateX(-100%); }
+    60% { transform: translateX(-200%); }
+    80% { transform: translateX(-300%); }
+    100% { transform: translateX(-400%); }
+}
+
+.studio-container {
+
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+
+    font-family: "Sofadi One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.studio-container h1 {
+    font-size: 3.5rem;
+    color: #343a40;
+    margin-bottom: 25px;
+}
+
+.studio-container p, .studio-container ul {
+    font-size: 1.3rem;
+    color: #6c757d;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.studio-container ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+.studio-container ul li {
+    margin-bottom: 10px;
+}
+
+.studio-container p:last-child {
+    margin-bottom: 5px;
+}
+.studio-container{
+            margin-bottom: 5px;
+}
+.contact {
+    padding: 20px;
+    margin: 20px;
+    text-align: center;     
+}
+.iconmedia a{
+
+    font-size: 2em;
+    
+}
+.iconmedia {
+    
+    justify-content: center;
+    display: flex;
+    gap: 30px;
+}
+
+
+
+/************************************ gallery html ************************************************/
+.gallery-continer-h1{
+    text-align: center;
+    margin-top: 20px;
+}
+.gallery-continer>div{
+    height: 210px;
+    width: 25%;
+    text-align: center;
+    color: #00ff00;
+    background-color: black;
+    margin: 30px;
+    line-height: 70px;
+    
+}
+.gallery-continer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 60px;
+    height: 40%;
+    width: 90%;
+} 
+.gallery-img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.gallery-img img{
+    width: 200px;
+    height: 200px;
+    border: 2px solid #ff3d0036;
+    border-radius: 13px;
+    box-shadow: 4px 7px 7px 0px #00000042;
+    cursor: pointer;
+    margin: 10px;
+    transition: 400ms;
+}
+.gallery-img img:hover{
+    filter: grayscale(1);
+    transform: scale(1.03);
+}
+/************************************ services html ************************************************/
+.service-continer-h1
+  {
+    
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+.service-continer-p
+ {
+  
+    align-items: center;
+    margin:50px;
+    font-size: 23px;
+    font-family: "Sofadi One", system-ui;
+    font-weight: 300;
+    font-style: normal;
+ }
+ .service-continer{
+    
+    height: 40%;
+ }
+
+ 
+ .img-box1{
+    margin-left: 15%;
+    margin-bottom: 5%;
+ }
+ .img-box1 img{
+    
+    box-shadow: 10px 10px 10px;
+    margin: 50px;
+}
+.img-box2{
+    margin-left: 15%;
+    margin-bottom: 5%;
+ }
+ .img-box2 img{
+    
+    box-shadow: 10px 10px 10px;
+    margin: 50px;
+}
+.img-box3{
+    margin-left: 15%;
+    margin-bottom: 5%;
+ }
+ .img-box3 img{
+   
+    box-shadow: 10px 10px 10px;
+    margin: 50px;
+}
+.img-box4{
+    margin-left: 15%;
+    margin-bottom: 5%;
+ }
+ .img-box4 img{
+    
+    box-shadow: 10px 10px 10px;
+    margin: 50px;
+}
+.img-box5{
+    margin-left: 15%;
+    margin-bottom: 5%;
+ }
+ .img-box5 img{
+    
+    box-shadow: 10px 10px 10px;
+    margin: 50px;
+}
+.img-box6{
+    margin-left: 15%;
+    margin-bottom: 5%;
+ }
+ .img-box6 img{
+    
+    box-shadow: 10px 10px 10px;
+    margin: 50px;
+}
+.img-box7{
+    margin-left: 15%;
+    margin-bottom: 5%;
+ }
+ .img-box7 img{
+    
+    box-shadow: 10px 10px 10px;
+    margin: 50px;
+}
+.img-box8{
+    margin-left: 15%;
+    margin-bottom: 5%;
+ }
+ .img-box8 img{
+    
+    box-shadow: 10px 10px 10px;
+    margin: 50px;
+}
+.img-box9{
+    margin-left: 15%;
+    margin-bottom: 5%;
+    
+ }
+ .img-box9 img{
+    box-shadow: 10px 10px 10px;
+    margin: 50px;
+}
+
+/************************************ about html ************************************************/
+.about-h1{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 30 px;
+    font-family: "Sofadi One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: underline;
+    
+}
+.abou1 div{
+    
+    display: flex;
+    position: relative;
+    width: 90%;
+    height: 50px;
+    border: 10px soli red;
+}
+.abou2 div{
+    height: 50px;
+    width: 90%;
+    margin-top: 50px;
+}
+.about-continer1{
+    
+    height: 270px;
+    width: 40%;
+    margin: 50px;
+
+    text-align: center;
+}
+.about-continer-p1{
+    position: relative;
+    top: -270px;
+    padding-left: 40%;
+    padding-right: 40px;
+    font-family: "Sofadi One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+.about-continer2{
+    
+    height: 250px;
+    width: 40%;
+    margin: 50px;
+
+    text-align: center;
+}
+.about-continer-p2{
+    position: relative;
+    top: -270px;
+    padding-left: 40%;
+    padding-right: 40px;
+    font-family: "Sofadi One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+ /************************************ book html ************************************************/   
+.book-h1{
+    color: #081b29;
+    text-align: center;
+    margin: 50px;
+}
+ .book-form {
+    display: flex;
+    background-color: #ca063d;
+    color: black;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    justify-content: center;
+    margin-left: 400px;
+    margin-bottom: 90px;
+}
+
+.book-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.book-form label {
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+
+.book-form input[type="name"],
+.book-form input[type="number"],
+.book-form input[type="email"],
+.book-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border 0.3s ease;
+}
+
+.book-form input[type="name"]:focus,
+.book-form input[type="number"]:focus,
+.book-form input[type="email"]:focus,
+.book-form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.book-form textarea {
+    resize: vertical;
+    height: 120px;
+}
+
+.book-form button {
+    padding: 12px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.book-form button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 500px) {
+    .book-form {
+        width: 90%;
+    }
+}
+
+address{
+    text-align: center;
+    color: #007bff;
+    font-size: 1.9rem;
+    
+}
+/************************************ social media ************************************************/
+.iconmedia a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid rgb(11, 43, 45);
+    border-radius: 50%;
+    font-size: 20px;
+    color: rgb(1, 25, 27);
+    text-decoration: none;
+    margin: 20px 15px 30px 0;
+}
+
+.iconmedia a:hover {
+    background: rgb(208, 4, 69);
+    color: #081b29;
+    box-shadow: 0 0 2px rgb(209, 221, 222);
+}
+.address-add{
+    height: 70px;
+   
+}
+
+
+
+
+footer {
+    background-color: #333;
+    color: white;display: flex;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    justify-content: center;
+}
